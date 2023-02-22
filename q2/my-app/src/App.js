@@ -23,6 +23,7 @@ class App extends React.Component {
     }
     return output;
   }
+
   render() {
     let numberForControlOutput = 0;
     let divList = [];
@@ -33,7 +34,7 @@ class App extends React.Component {
       divList.push(<p key={i}></p>);
       numberForControlOutput += 1;
     }
-    console.log(2, divList);
+
     return (
       <div>
         Question: Show this result in Answer:
@@ -61,5 +62,6 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
 

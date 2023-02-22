@@ -21,8 +21,8 @@ class App extends React.Component {
       ]
     };
   }
+
   removeRow = (id) => {
-    console.log(id);
     const group = this.state.groups;
 
     let newList = group.filter((i) => {
@@ -31,6 +31,7 @@ class App extends React.Component {
 
     this.setState({ groups: newList });
   };
+
   render() {
     let rRow = (id) => this.removeRow(id);
     return (
@@ -45,4 +46,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
